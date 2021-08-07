@@ -81,6 +81,79 @@ After Learning JS basic, syntax and core concept try to solve at least 50 basic 
 3. Content Security Policy
 4. OWASP security Risks
 
+
+# HTTP
+<blockquote>
+HTTP is a application layer protocol. It was designed for communication between web browsers and web servers.
+
+## What’s in an HTTP request?
+
+web browsers ask for the information they need to load a website. 
+A typical HTTP request contains:
+
+1. HTTP version type
+2. a URL
+3. an HTTP method
+4. HTTP request headers
+5. Optional HTTP body.
+
+### What’s an HTTP method?
+
+1. GET
+2. POST
+
+### What’s an HTTP method?
+
+An HTTP response is what web clients (often browsers) receive from an Internet server in answer to an HTTP request. These responses communicate valuable information based on what was asked for in the HTTP request.
+
+A typical HTTP response contains:
+
+1. an HTTP status code
+2. HTTP response headers
+3. optional HTTP body
+
+## What is HTTPS?
+
+Hypertext transfer protocol secure (HTTPS) is the secure version of HTTP, which is the primary protocol used to send data between a web browser and a website. HTTPS is encrypted in order to increase security of data transfer. This is particularly important when users transmit sensitive data, such as by logging into a bank account, email service, or health insurance provider.
+
+## How does HTTPS work?
+HTTPS uses an encryption protocol to encrypt communications. The protocol is called Transport Layer Security (TLS), although formerly it was known as Secure Sockets Layer (SSL). This protocol secures communications by using what’s known as an asymmetric public key infrastructure. This type of security system uses two different keys to encrypt communications between two parties:
+
+1. The private key - this key is controlled by the owner of a website and it’s kept, as the reader may have speculated, private. This key lives on a web server and is used to decrypt information encrypted by the public key.
+
+2. The public key - this key is available to everyone who wants to interact with the server in a way that’s secure. Information that’s encrypted by the public key can only be decrypted by the private key.
+
+## What is Transport Layer Security (TLS)?
+
+A primary use case of TLS is encrypting the communication between web applications and servers, such as web browsers loading a website. 
+
+## What does TLS do?
+There are three main components to what the TLS protocol accomplishes: Encryption, Authentication, and Integrity.
+
+> **Encryption**: hides the data being transferred from third parties.
+> **Authentication**: ensures that the parties exchanging information are who they claim to be.
+> **Integrity**: verifies that the data has not been forged or tampered with.
+
+# What is CORS?
+
+> Cross-Origin Resource Sharing
+
+Cross-origin resource sharing (CORS) is a mechanism that allows a way for web pages to access API or assets running on a different restricted domain.
+
+cors needs to declared at server side.
+
+I have a domain which is www.domain-A.com. Now i want to use a picture in my domain A website. The picture is 
+located at www.domain-B.com. When i sent GET request domain-B server for pictures, it will give me a cors error at browser.
+
+Solution: i need to declare cors library at my backend code(nodejs-app.js) <br>
+
+## Content Security Policy (CSP) 
+
+is an added layer of security that helps to detect and mitigate certain types of attacks, including Cross Site Scripting (XSS) and data injection attacks. These attacks are used for everything from data theft to site defacement to distribution of malware.
+
+
+</blockquote>
+
 ## Package Managers
 
 1. npm
@@ -341,3 +414,5 @@ After Learning JS basic, syntax and core concept try to solve at least 50 basic 
 
 
 # KEEP LEARNING :fist:
+
+
